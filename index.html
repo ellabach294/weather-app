@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Weather App">
+    <meta name="description" content="Weather App is an application using to display the weather and forecast of the searched city, designed by Ella Bach">
+
+    <title>Weather App</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- JS -->
+    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./assets/js/route.js" type="module"></script>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./assets/img/logo.png" alt="Weather App site ID" width="364" height="93">
+            </a>
+
+            <div class="search-view" data-search-view>
+
+                <div class="search-wrapper">
+                    <input type="search" name="search" placeholder="Search city ..." autocomplete="off" class="search-field" data-search-field>
+
+                    <span class="m-icon">search</span>
+
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggle>
+                        <span class="m-icon">arrow_back</span>
+                    </button>
+                </div>
+
+                <div class="search-result" data-search-result>
+                    <ul class="view-list" data-search-list>
+    
+                        <li class="view-item">
+                            <span class="m-icon">location_on</span>
+    
+                            <div>
+                                <p class="item-title">London</p>
+                                <p class="lable-2 item-subtitle">State of London, GB</p>
+                            </div>
+    
+                            <a href="#" class="item-link has-state" data-search-toggler></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                    <span class="m-icon icon">search</span>
+                </button>
+
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
+                    <span class="m-icon">my_location</span>
+
+                    <span class="span">Current Location</span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <article class="container">
+            <div class="content-left">
+                <!-- Current Weather -->
+            </div>
+        </article>
+    </main>
+</body>
+</html>

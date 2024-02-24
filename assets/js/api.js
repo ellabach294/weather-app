@@ -15,10 +15,10 @@ export const fetchData = function(URL, callback) {
 
 export const url = {
     currentWeather(lat, lon) {
-        return `https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}.99&units=metric`
+        return `https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&units=metric`
     },
     forecast(lat, lon) {
-        return `https://api.openweathermap.org/data/2.5/forecast?${lat}&${lon}.99&units=metric`
+        return `https://api.openweathermap.org/data/2.5/forecast?${lat}&${lon}&units=metric`
     },
     airPollution(lat, lon) {
         return `http://api.openweathermap.org/data/2.5/air_pollution?${lat}&${lon}`
